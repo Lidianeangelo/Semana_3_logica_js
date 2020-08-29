@@ -4,9 +4,14 @@ Por exemplo, recebendo o número 5, a função deve retornar 15, ou seja, o resu
 
 const read=require("readline-sync")
 
-const numero=parseInt(read.question("Digite a quantidade de latas compradas: "))
+let numero=parseInt(read.question("Digite a quantidade de latas compradas: "))
 
-function soma(){
-    return (numero+1)*5
+let somaTotal=0
+
+function somar(numero){
+    for(let contador = numero; contador<=numero; contador++){
+        somaTotal+=numero
+
 }
-console.log(soma())
+console.log(somar(numero))
+
