@@ -3,10 +3,11 @@ e chame uma função que converta para Fahrenheit. F = 9*C/5 + 32*/
 
 const read=require("readline-sync")
 
-const grau=parseInt(read.question("Digite a temperatura de hoje: "))
+const grau=parseInt(read.question("Digite a temperatura de hoje em Celsius: "))
 
 function calculoGrau(){
-    return ((9*grau)/5)+32
+    
+    return ((grau*1.8)+32)
 }
 
-console.log(calculoGrau().toFixed()+"°F")
+console.log("A temperatura convertida para Fahrenheit é "+calculoGrau().toFixed()+"°F")
